@@ -1,13 +1,13 @@
 *{
     margin: 0;
     padding: 0;
-    background-color: #F4A900;
+    background-color: #FFE8B6;
 }
 
 
 /**colours**/
 .custom-color {
-    color: #F4A900
+    color: #F4A900;
 }
 
 .custom-background-color {
@@ -30,6 +30,16 @@
     background-color: #000000;
 }
 
+/**fonts**/
+.main-font {
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-weight: bolder;
+}
+
+.logo {
+    font-size: 35px;
+    font-family: "Lucida Console", "Courier New", monospace;
+}
 
 /**alignment**/
 .float-left {
@@ -45,6 +55,7 @@
 .topnav {
     overflow: hidden;
     display: flex;
+    background-color: #F4A900;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -58,12 +69,14 @@
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
+    margin: 3px 3px 3px 3px
   }
   
   .topnav a:hover {
     color: black;
     text-decoration: underline;
     font-size: 18px;
+    margin: 0px 0px 0px 0px;
 }
 
 
@@ -71,15 +84,18 @@
 .start-button {
     border: 2px solid #000000;
     font-size: 20px;
+    font-family: "Lucida Console", "Courier New", monospace;
     border-radius: 4px;
     transition-duration: 0.3s;
-    padding: 10px;
-    margin-right: 2px;
+    padding: 15px;
+    margin: 3px 3px 3px 3px;
 }
 
 .start-button:hover {
-    padding: 12px;
-    margin-right: 0px;
+    border: 3px solid #000000;
+    text-decoration: underline;
+    padding: 17px;
+    margin: 0px 0px 0px 0px;
 }
 
 
