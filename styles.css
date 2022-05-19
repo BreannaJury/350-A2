@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: #F4A900;
+}
+
+
+/**colours**/
+.custom-color {
+    color: #F4A900
+}
+
+.custom-background-color {
+    background-color: #F4A900;
+}
+
+.custom-color-secondary {
+    color: #FFE8B6;
+}
+
+.custom-background-color-secondary {
+    background-color: #FFE8B6;
+}
+
+.color-black {
+    color: #000000;
+}
+
+.color-background-black {
+    background-color: #000000;
+}
+
+
+/**alignment**/
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+
+/**nav bar**/
+.topnav {
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px 0px 20px;
+  }
+
+  .topnav a {
+    float: right;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    color: black;
+    text-decoration: underline;
+    font-size: 18px;
+}
+
+
+/**buttons*/
+.start-button {
+    border: 2px solid #000000;
+    font-size: 20px;
+    border-radius: 4px;
+    transition-duration: 0.3s;
+    padding: 10px;
+    margin-right: 2px;
+}
+
+.start-button:hover {
+    padding: 12px;
+    margin-right: 0px;
+}
+
+
+/**main body**/
+.main {
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px 0px 20px;
+  }
