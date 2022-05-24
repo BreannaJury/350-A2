@@ -2,25 +2,29 @@
 <html>
 <head>
     <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
 
-    <title>Carbon Footprint!</title>
+    <title>Carbon Tiptoe!</title>
     <link rel="icon" href="logo2.png" type="image/icon type">
 </head>
 
 <body>
 
 <!-- Navigation bar -->
+<!-- find way to make it stay at top when you scroll -->
 <div class="topnav main-font custom-background-color">
+    <div class="custom-background-color" >
+        <h2 class="logo custom-background-color" style="margin-left: 40px;">CARBON TIPTOE!</h2>
+    </div>
+
     <div class="custom-background-color">
-        <a class="custom-background-color" href="One"> VOLUNTEER </a>
-        <a class="custom-background-color" href="Two"> WHAT WE DO </a>
-        <a class="custom-background-color" href="Three"> WHO WE ARE </a>
+        <a class="custom-background-color" href="#body"> VOLUNTEER </a>
+        <a class="custom-background-color" href="#body"> WHAT WE DO </a>
+        <a class="custom-background-color" href="#body"> WHO WE ARE </a>
     </div>
+    
     <div class="custom-background-color" >
-        <p class="logo custom-background-color">CARBON FOOTPRINT!</p>
-    </div>
-    <div class="custom-background-color" >
-        <button class="start-button custom-background-color">START</button>
+        <button id="action-button" class="start-button custom-background-color" data-modal-target="#ct-form">START</button>
     </div>
 </div>
 
@@ -30,8 +34,91 @@
 </div>
 
 <!-- Information -->
+<div class="body">
+    <div class="paragraph" style="margin-top: 200px;">
+        <h1> Who we are </h1>
+        <hr>
+        <p class="text">Carbon Tiptoe! is a non-profit organisation dedicated to demystifying carbon footprints. 
+            We aim to help people make sense of carbon footprints and live more sustainable lives, 
+            no matter what level of consumer engagement they are involved in.
+        </p>
+    </div>
+
+    <div class="paragraph">
+        <h1> What we do </h1>
+        <hr>
+        <p class="text"> 
+            Our mission is to provide easy-to-understand information on how much your personal 
+            lifestyle has an impact on the environment – and help you to reduce it. We provide data on 
+            how many carbon footprints the average consumer generates, and how much individual 
+            lifestyle changes can reduce these footprints.
+        </p>
+
+        <h1> What we offer </h1>
+        <hr>
+        <p class="text">We offer free tools for you to get involved 
+            and create a personalized footprint report (which you can share with friends and colleagues to 
+            compare and learn from others). We also highlight large producers and businesses that have carbon 
+            emissions levels higher than NZ's average.</p>
+    </div>
+
+    <div class="paragraph">
+        <h1> Volunteer </h1>
+        <hr>
+        <p class="text">Help reduce carbon emissions by volunteering with us at a range of events, 
+            fundraisers and services. You’ll get training and can choose to volunteer on a shift basis, 
+            joining the team at different times, or a full-time position.</p>
+
+        <h1 style="margin-top: 85px;"> Initiatives </h1>
+        <hr>
+        <p class="text">Adopt a tree: 
+            Adopt a tree is a great way to support our campaign and become part of the solution to global climate change. 
+            We need to increase the number of trees in our parks and gardens, so to help achieve this, 
+            we are asking you to adopt a tree and plant it in your local area. 
+            If you have the space, please give the tree a home.</p>
+    </div>
+</div>
 
 
+<div class="modal" id="ct-form">
+  <div class="modal-header custom-background-color">
+    <div class="title custom-background-color">Register</div>
+    <button data-close-button class="close-button">&times;</button>
+  </div>
+  <form class="modal-body">
+    <div id="userDetails">
+      <label for="name">Given Name:</label>
+      <input type="text" id="name" name="name">
+      
+      <label for="surname">Surname:</label>
+      <input type="text" id="surname" name="surname">
+
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username">
+
+      <label for="password">Password:</label>
+      <input type="password" id="password">
+    </div>
+
+    <div id="addresses">
+      <label for="hAddress">Home Address:</label>
+      <input type="text" id="hAddress" name="hAddress">
+
+      <label for="wAddress">Work Address:</label>
+      <input type="text" id="wAddress" name="wAddress">
+    </div>
+
+    <div id="contacts">
+      <label for="number">Mobile Number:</label>
+      <input type="number" id="number" name="number">
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email">
+    </div>
+    <input type="submit" value="Submit">
+  </form>
+</div>
+<div id="overlay"></div>
 
 </body>
 
