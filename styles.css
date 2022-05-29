@@ -78,6 +78,16 @@
   font-size: 20px;
 }
 
+.section-label {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 1000;
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+.spacer {
+  margin: 40px;
+}
 
 
 /**nav bar**/
